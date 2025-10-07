@@ -191,3 +191,15 @@ form button:hover {
         font-size: 1.5rem;
     }
 }
+
+/* ==== HOMEPAGE IMAGE RESPONSIVENESS ==== */
+@media (max-width: 768px) {
+    .homepage-image {
+        width: 80%;          /* shrink image width on mobile */
+        height: auto;        /* maintain aspect ratio */
+        display: block;
+        margin: 1rem auto;   /* centers the image with some spacing */
+        opacity: 0.9;        /* slightly increase opacity for better visibility */
+    }
+}
+
