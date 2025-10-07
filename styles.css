@@ -192,14 +192,10 @@ form button:hover {
     }
 }
 
-/* ==== HOMEPAGE IMAGE RESPONSIVENESS ==== */
-@media (max-width: 768px) {
+/* Make the homepage image smaller on phones */
+@media (max-width: 576px) {
     .homepage-image {
-        width: 80%;          /* shrink image width on mobile */
-        height: auto;        /* maintain aspect ratio */
-        display: block;
-        margin: 1rem auto;   /* centers the image with some spacing */
-        opacity: 0.9;        /* slightly increase opacity for better visibility */
+        max-width: 90%;  /* limits image width to 90% of screen */
+        margin: 0 auto;  /* keeps it centered */
     }
 }
-
