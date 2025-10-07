@@ -28,11 +28,11 @@ a:hover {
 /* ==== NAVBAR ==== */
 .navbar-nav .nav-link.active {
     font-weight: bold;
-    color: #ffb81c !important; /* OU Gold accent for active link */
+    color: #ffffff !important; /*White accent for active link*/
 }
 
 .navbar-nav .nav-link:hover {
-    color: #ffffff !important; /* gold hover */
+    color: #ffffff !important; /* white hover */
 }
 
 /* ==== HEADINGS ==== */
