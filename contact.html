@@ -31,33 +31,29 @@
 
     <!-- Contact Section -->
     <section class="container my-5">
-        <h1 class="text-center text-crimson mb-4">Contact Me</h1>
-        <p class="text-center mb-4">Fill out the form below to send me a message. I’ll get back to you as soon as possible!</p>
+        <h1 class="text-center text-crimson mb-5">Contact Me</h1>
 
-        <div class="row justify-content-center">
-            <div class="col-md-6">
-                <form id="contactForm" action="https://formspree.io/f/xldplqbn" method="POST">
-                    <div class="mb-3">
-                        <label for="name" class="form-label">Name</label>
-                        <input type="text" class="form-control" id="name" name="name" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" class="form-control" id="email" name="_replyto" required>
-                    </div>
-
-                    <div class="mb-3">
-                        <label for="message" class="form-label">Message</label>
-                        <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-                    </div>
-
-                    <button type="submit" class="btn btn-crimson w-100">Send Message</button>
-                </form>
+        <form id="contactForm" action="https://formspree.io/f/xldplqbn" method="POST">
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" name="name" placeholder="Your Name" required>
             </div>
-        </div>
+
+            <div class="mb-3">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" name="email" placeholder="Your Email" required>
+            </div>
+
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-crimson">Send Message</button>
+        </form>
     </section>
 
+    <!-- Footer -->
     <footer class="bg-light py-3 text-center">
         <p>&copy; 2024 Lucas West</p>
         <p>Connect with me on <a href="https://www.linkedin.com/in/lucas-west-451887298/" target="_blank">LinkedIn</a></p>
