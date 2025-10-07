@@ -1,50 +1,39 @@
 // script.js
 
-// Contact Form Validation & Submission
-document.addEventListener("DOMContentLoaded", function () {
-    const contactForm = document.getElementById("contact-form");
+document.addEventListener("DOMContentLoaded", function() {
+    const contactForm = document.getElementById("contactForm");
 
     if (contactForm) {
-        contactForm.addEventListener("submit", function (e) {
-            e.preventDefault();
+        contactForm.addEventListener("submit", function(event) {
+            // Prevent default form submission to allow validation and alert
+            event.preventDefault();
 
+            // Get form fields
             const name = document.getElementById("name").value.trim();
             const email = document.getElementById("email").value.trim();
             const message = document.getElementById("message").value.trim();
 
-            if (!name || !email || !message) {
-                alert("Please fill out all fields.");
+            // Simple validation
+            if (name === "" || email === "" || message === "") {
+                alert("Please fill out all fields before submitting.");
                 return;
             }
 
-            // Simple email validation
-            const emailPattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/;
-            if (!email.match(emailPattern)) {
+            // Optional: email format check
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            if (!emailPattern.test(email)) {
                 alert("Please enter a valid email address.");
                 return;
             }
 
-            // Use Formspree for email sending
-            const formData = new FormData(contactForm);
-            fetch(contactForm.action, {
-                method: "POST",
-                body: formData,
-                headers: {
-                    'Accept': 'application/json'
-                }
-            })
-            .then(response => {
-                if (response.ok) {
-                    alert("Thank you! Your message has been sent.");
-                    contactForm.reset();
-                } else {
-                    alert("Oops! There was a problem sending your message.");
-                }
-            })
-            .catch(error => {
-                alert("Oops! There was a problem sending your message.");
-                console.error("Error:", error);
-            });
+            // If validation passes, submit the form
+            contactForm.submit();
+
+            // Show thank-you alert
+            alert("Thank you for your message! I will get back to you soon.");
+            
+            // Clear form fields after submission
+            contactForm.reset();
         });
     }
 });
