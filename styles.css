@@ -65,10 +65,17 @@ section h1 {
 }
 
 /* ==== CARD STYLING ==== */
-.card-container {
+.card-container, .resume-card-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 3 columns */
     gap: 1.5rem; /* spacing between cards */
+}
+
+.card-container {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for Projects/Skills */
+}
+
+.resume-card-container {
+    grid-template-columns: 1fr; /* single column for Resume */
 }
 
 .card {
@@ -144,12 +151,12 @@ form button:hover {
 /* ==== RESPONSIVE ADJUSTMENTS ==== */
 @media (max-width: 992px) {
     .card-container {
-        grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for medium screens */
     }
 }
 
 @media (max-width: 768px) {
-    .card-container {
+    .card-container, .resume-card-container {
         grid-template-columns: 1fr; /* 1 column on small screens */
     }
 
