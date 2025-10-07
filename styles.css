@@ -1,189 +1,134 @@
-/* =======================
-   GENERAL RESET & BODY
-======================= */
+/* ===========================
+   OU Crimson Theme Colors
+=========================== */
+:root {
+    --ou-crimson: #841617;
+    --ou-gray: #f5f5f5;
+}
+
+/* Utility Classes */
+.text-crimson {
+    color: var(--ou-crimson) !important;
+}
+
+.bg-crimson {
+    background-color: var(--ou-crimson) !important;
+}
+
+/* ===========================
+   Global Styles
+=========================== */
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--ou-gray);
     line-height: 1.6;
-    background-color: #f8f9fa;
     color: #333;
     margin: 0;
     padding: 0;
 }
 
-/* =======================
-   OU THEME COLORS
-======================= */
-:root {
-    --ou-crimson: #841617;
-    --ou-gray: #333333;
-    --ou-light-gray: #f8f9fa;
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
 }
 
-/* =======================
-   NAVBAR
-======================= */
-.navbar {
-    background-color: var(--ou-crimson);
+a {
+    text-decoration: none;
 }
 
-.navbar-brand,
-.navbar-nav .nav-link {
-    color: #fff;
+a:hover {
+    text-decoration: underline;
 }
 
-.navbar-nav .nav-link.active {
+/* ===========================
+   Navbar
+=========================== */
+.navbar .nav-link {
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.navbar .nav-link.active {
     font-weight: bold;
     text-decoration: underline;
 }
 
-.navbar-nav .nav-link:hover {
-    color: #ffd700; /* Gold accent for hover */
+/* ===========================
+   Section Styling
+=========================== */
+section {
+    padding: 2rem 0;
 }
 
-/* =======================
-   HEADINGS
-======================= */
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: var(--ou-crimson);
-    margin-bottom: 1rem;
-}
-
-.text-crimson {
-    color: var(--ou-crimson) !important;
-}
-
-/* =======================
-   HERO SECTIONS
-======================= */
-header {
-    background-color: var(--ou-light-gray);
-    padding: 4rem 0;
-    text-align: center;
-}
-
-header h1 {
+.container h1 {
     font-size: 2.5rem;
-    font-weight: 700;
 }
 
-header p {
-    font-size: 1.2rem;
-    color: #555;
-}
-
-/* =======================
-   CARDS
-======================= */
+/* ===========================
+   Cards
+=========================== */
 .card {
+    border: none;
     border-radius: 0.75rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
 }
 
 .card-title {
-    margin-bottom: 1rem;
+    font-weight: 600;
 }
 
-/* =======================
-   LISTS
-======================= */
-ul {
-    padding-left: 1.25rem;
+.list-group-item {
+    border: none;
+    padding-left: 0;
+    padding-right: 0;
 }
 
-ul li {
-    margin-bottom: 0.5rem;
+/* ===========================
+   Images
+=========================== */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
 
-/* =======================
-   FOOTER
-======================= */
+/* ===========================
+   Footer
+=========================== */
 footer {
-    background-color: var(--ou-light-gray);
+    background-color: #fff;
     padding: 2rem 1rem;
     text-align: center;
-    font-size: 0.95rem;
-    color: var(--ou-gray);
 }
 
 footer a {
     color: var(--ou-crimson);
     text-decoration: none;
-    font-weight: 600;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-/* =======================
-   IMAGES
-======================= */
-img {
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 1rem auto;
-    border-radius: 0.5rem;
-}
-
-/* =======================
-   SECTIONS
-======================= */
-section {
-    padding: 3rem 0;
-}
-
-/* =======================
-   LINKS
-======================= */
-a {
-    color: var(--ou-crimson);
-}
-
-a:hover {
-    color: #ffd700;
-    text-decoration: none;
-}
-
-/* =======================
-   FORMS
-======================= */
-input, textarea, button {
-    border-radius: 0.5rem;
-}
-
-button {
+/* ===========================
+   Buttons
+=========================== */
+.btn-crimson {
     background-color: var(--ou-crimson);
     color: #fff;
-    border: none;
-    padding: 0.5rem 1.25rem;
-    font-weight: 600;
-    transition: background-color 0.3s ease;
+    border-radius: 0.5rem;
 }
 
-button:hover {
-    background-color: #660000;
+.btn-crimson:hover {
+    background-color: #6c1214;
+    color: #fff;
 }
 
-/* =======================
-   RESPONSIVE SPACING
-======================= */
+/* ===========================
+   Responsive Adjustments
+=========================== */
 @media (max-width: 768px) {
-    header h1 {
-        font-size: 2rem;
-    }
-
-    header p {
-        font-size: 1rem;
-    }
-
-    .card-body {
-        padding: 1rem;
+    .navbar .nav-link {
+        margin-right: 0;
+        margin-bottom: 0.5rem;
     }
 }
