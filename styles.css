@@ -1,64 +1,189 @@
+/* =======================
+   GENERAL RESET & BODY
+======================= */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+    color: #333;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
 }
 
+/* =======================
+   OU THEME COLORS
+======================= */
+:root {
+    --ou-crimson: #841617;
+    --ou-gray: #333333;
+    --ou-light-gray: #f8f9fa;
+}
+
+/* =======================
+   NAVBAR
+======================= */
+.navbar {
+    background-color: var(--ou-crimson);
+}
+
+.navbar-brand,
+.navbar-nav .nav-link {
+    color: #fff;
+}
+
+.navbar-nav .nav-link.active {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #ffd700; /* Gold accent for hover */
+}
+
+/* =======================
+   HEADINGS
+======================= */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--ou-crimson);
+    margin-bottom: 1rem;
+}
+
+.text-crimson {
+    color: var(--ou-crimson) !important;
+}
+
+/* =======================
+   HERO SECTIONS
+======================= */
 header {
-    background-color: #333;
-    color: #fff;
-    padding: 10px 0;
-}
-
-    header nav ul {
-        list-style-type: none;
-        text-align: center;
-    }
-
-        header nav ul li {
-            display: inline;
-            margin: 0 15px;
-        }
-
-            header nav ul li a {
-                color: #fff;
-                text-decoration: none;
-            }
-
-h1 {
+    background-color: var(--ou-light-gray);
+    padding: 4rem 0;
     text-align: center;
-    margin: 0;
 }
 
+header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+header p {
+    font-size: 1.2rem;
+    color: #555;
+}
+
+/* =======================
+   CARDS
+======================= */
+.card {
+    border-radius: 0.75rem;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+}
+
+.card-title {
+    margin-bottom: 1rem;
+}
+
+/* =======================
+   LISTS
+======================= */
+ul {
+    padding-left: 1.25rem;
+}
+
+ul li {
+    margin-bottom: 0.5rem;
+}
+
+/* =======================
+   FOOTER
+======================= */
 footer {
-    background-color: #333;
-    color: #fff;
+    background-color: var(--ou-light-gray);
+    padding: 2rem 1rem;
     text-align: center;
-    padding: 10px 0;
+    font-size: 0.95rem;
+    color: var(--ou-gray);
 }
 
-    footer a {
-        color: dodgerblue;
-        text-decoration: none;
+footer a {
+    color: var(--ou-crimson);
+    text-decoration: none;
+    font-weight: 600;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* =======================
+   IMAGES
+======================= */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem auto;
+    border-radius: 0.5rem;
+}
+
+/* =======================
+   SECTIONS
+======================= */
+section {
+    padding: 3rem 0;
+}
+
+/* =======================
+   LINKS
+======================= */
+a {
+    color: var(--ou-crimson);
+}
+
+a:hover {
+    color: #ffd700;
+    text-decoration: none;
+}
+
+/* =======================
+   FORMS
+======================= */
+input, textarea, button {
+    border-radius: 0.5rem;
+}
+
+button {
+    background-color: var(--ou-crimson);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1.25rem;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #660000;
+}
+
+/* =======================
+   RESPONSIVE SPACING
+======================= */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
     }
 
-        footer a:hover {
-            color: darkblue;
-        }
+    header p {
+        font-size: 1rem;
+    }
 
-section {
-    padding: 20px;
-    margin: 20px;
-    background-color: #fff;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-img {
-    width: fit-content;
-    height: 501;
-    -ms-align-content: inherit;
-    -webkit-align-content: inherit;
-    align-content: inherit;
+    .card-body {
+        padding: 1rem;
+    }
 }
