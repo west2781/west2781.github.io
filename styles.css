@@ -1,4 +1,4 @@
-/* General Page Styles */
+/* ===== General Page Styles ===== */
 body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
@@ -22,12 +22,12 @@ a:hover {
     text-decoration: underline;
 }
 
-/* Navbar */
+/* ===== Navbar ===== */
 .navbar {
     padding: 0.8rem 1rem;
 }
 
-/* Sections */
+/* ===== Sections ===== */
 section {
     padding: 60px 20px;
 }
@@ -36,9 +36,9 @@ section h1 {
     margin-bottom: 20px;
 }
 
-/* Footer */
+/* ===== Footer ===== */
 .bg-crimson {
-    background-color: #841617; /* OU Crimson */
+    background-color: #841617 !important; /* OU Crimson */
 }
 
 .text-crimson {
@@ -58,10 +58,10 @@ footer a:hover {
     text-decoration: underline;
 }
 
-/* Buttons */
+/* ===== Buttons ===== */
 .btn-crimson {
-    background-color: #841617; /* OU Crimson */
-    color: #ffffff; /* White text */
+    background-color: #841617 !important; /* OU Crimson */
+    color: #ffffff !important; /* White text */
     border: none;
     padding: 10px 20px;
     font-size: 1rem;
@@ -71,11 +71,11 @@ footer a:hover {
 }
 
 .btn-crimson:hover {
-    background-color: #a51c26; /* Slightly lighter crimson for hover */
-    color: #ffffff;
+    background-color: #a51c26 !important; /* Slightly lighter crimson for hover */
+    color: #ffffff !important;
 }
 
-/* Forms */
+/* ===== Forms ===== */
 form input, form textarea {
     border-radius: 5px;
     border: 1px solid #ccc;
@@ -87,7 +87,7 @@ form label {
     font-weight: bold;
 }
 
-/* Skills / Projects Cards */
+/* ===== Skills / Projects Cards ===== */
 .card {
     border-radius: 8px;
     margin-bottom: 20px;
@@ -100,7 +100,7 @@ form label {
     color: #841617;
 }
 
-/* Images */
+/* ===== Images ===== */
 img {
     max-width: 100%;
     height: auto;
@@ -108,7 +108,7 @@ img {
     margin: 0 auto;
 }
 
-/* Responsive spacing */
+/* ===== Responsive Spacing ===== */
 @media (max-width: 768px) {
     section {
         padding: 40px 15px;
