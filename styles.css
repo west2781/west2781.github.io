@@ -1,74 +1,116 @@
-/* OU Crimson Theme */
-:root {
-    --ou-crimson: #841617;
-    --ou-light: #f9f9f9;
-    --text-dark: #212529;
-    --text-light: #fff;
-}
-
-/* General Body */
+/* General Page Styles */
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--ou-light);
-    color: var(--text-dark);
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
 }
 
-/* Links */
+h1, h2, h3 {
+    font-family: 'Arial Black', sans-serif;
+    color: #841617; /* OU Crimson */
+}
+
 a {
+    color: #841617;
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--ou-crimson);
+    text-decoration: underline;
 }
 
 /* Navbar */
 .navbar {
-    background-color: var(--ou-crimson) !important;
+    padding: 0.8rem 1rem;
 }
 
-.navbar .nav-link.active {
-    font-weight: 600;
-    color: var(--text-light) !important;
+/* Sections */
+section {
+    padding: 60px 20px;
 }
 
-/* Section Headings */
-h1, h2, h3, h4, h5 {
-    font-weight: 600;
-    margin-bottom: 1rem;
-}
-
-.text-crimson {
-    color: var(--ou-crimson) !important;
-}
-
-/* Cards */
-.card {
-    border: none;
-    border-radius: 0.5rem;
-}
-
-/* Forms */
-input, textarea {
-    border-radius: 0.375rem;
+section h1 {
+    margin-bottom: 20px;
 }
 
 /* Footer */
+.bg-crimson {
+    background-color: #841617; /* OU Crimson */
+}
+
+.text-crimson {
+    color: #841617;
+}
+
 footer {
-    background-color: var(--ou-light);
-    color: var(--text-dark);
     font-size: 0.9rem;
 }
 
+/* Links in footer */
 footer a {
-    font-weight: 500;
+    color: #ffffff;
 }
 
-/* Center Contact Header */
-#contact-header {
-    text-align: center;
-    margin-bottom: 2rem;
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Buttons */
+.btn-crimson {
+    background-color: #841617; /* OU Crimson */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-crimson:hover {
+    background-color: #a51c26; /* Slightly lighter crimson for hover */
+    color: #ffffff;
+}
+
+/* Forms */
+form input, form textarea {
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    width: 100%;
+}
+
+form label {
+    font-weight: bold;
+}
+
+/* Skills / Projects Cards */
+.card {
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    background-color: #fff;
+}
+
+.card h2 {
+    color: #841617;
+}
+
+/* Images */
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+/* Responsive spacing */
+@media (max-width: 768px) {
+    section {
+        padding: 40px 15px;
+    }
 }
