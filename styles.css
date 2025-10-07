@@ -123,6 +123,11 @@ img {
     margin: 0 auto;
 }
 
+.homepage-image {
+    opacity: 0.85; /* adjust between 0.7 - 0.9 for desired transparency */
+    mix-blend-mode: multiply; /* blends the image with background nicely */
+}
+
 /* ==== CONTACT FORM ==== */
 form {
     max-width: 600px;
