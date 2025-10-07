@@ -1,15 +1,14 @@
-/* ===== General Page Styles ===== */
+/* Global Styles */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
+    line-height: 1.6;
+    background-color: #fff;
     color: #333;
 }
 
 h1, h2, h3 {
-    font-family: 'Arial Black', sans-serif;
     color: #841617; /* OU Crimson */
 }
 
@@ -22,95 +21,127 @@ a:hover {
     text-decoration: underline;
 }
 
-/* ===== Navbar ===== */
-.navbar {
-    padding: 0.8rem 1rem;
+/* Navigation */
+nav {
+    background-color: #f5f5f5;
+    padding: 10px 0;
 }
 
-/* ===== Sections ===== */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Section Styles */
 section {
-    padding: 60px 20px;
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 20px;
 }
 
 section h1 {
+    font-size: 32px;
     margin-bottom: 20px;
 }
 
-/* ===== Footer ===== */
-.bg-crimson {
-    background-color: #841617 !important; /* OU Crimson */
+section h2 {
+    font-size: 24px;
+    margin-top: 25px;
+    margin-bottom: 10px;
 }
 
-.text-crimson {
-    color: #841617;
+section p, section li {
+    font-size: 16px;
 }
 
+/* Lists */
+ul {
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+/* Footer */
 footer {
-    font-size: 0.9rem;
+    background-color: #841617; /* OU Crimson */
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
 }
 
-/* Links in footer */
 footer a {
-    color: #ffffff;
+    color: #fff;
+    font-weight: bold;
 }
 
 footer a:hover {
     text-decoration: underline;
 }
 
-/* ===== Buttons ===== */
-.btn-crimson {
-    background-color: #841617 !important; /* OU Crimson */
-    color: #ffffff !important; /* White text */
-    border: none;
-    padding: 10px 20px;
-    font-size: 1rem;
-    font-weight: 600;
-    border-radius: 5px;
-    transition: background-color 0.3s ease;
+/* Contact Form */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
 }
 
-.btn-crimson:hover {
-    background-color: #a51c26 !important; /* Slightly lighter crimson for hover */
-    color: #ffffff !important;
-}
-
-/* ===== Forms ===== */
 form input, form textarea {
-    border-radius: 5px;
-    border: 1px solid #ccc;
     padding: 10px;
-    width: 100%;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
 }
 
-form label {
-    font-weight: bold;
+form button {
+    background-color: #841617; /* OU Crimson */
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
 }
 
-/* ===== Skills / Projects Cards ===== */
-.card {
-    border-radius: 8px;
-    margin-bottom: 20px;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    padding: 20px;
-    background-color: #fff;
+form button:hover {
+    background-color: #a31d23; /* Darker crimson hover */
 }
 
-.card h2 {
-    color: #841617;
-}
-
-/* ===== Images ===== */
-img {
-    max-width: 100%;
-    height: auto;
+/* OU Image Styling */
+.ou-logo {
     display: block;
-    margin: 0 auto;
+    margin: 20px auto;
+    max-width: 250px;
+    height: auto;
 }
 
-/* ===== Responsive Spacing ===== */
+/* Responsive Design */
 @media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+    }
+    nav ul li {
+        margin: 10px 0;
+    }
     section {
-        padding: 40px 15px;
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 28px;
+    }
+    h2 {
+        font-size: 20px;
     }
 }
