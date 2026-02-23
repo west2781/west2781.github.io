@@ -300,5 +300,6 @@ form button:hover {
 /* ========================= */
 
 .card--soft {
-    border-left: 4px solid #d6d6d6; /* light gray instead of crimson */
+    border-left: 3px solid #841617; /* thinner crimson */
+    background-color: #f9f9f9;      /* slightly lighter background */
 }
