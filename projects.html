@@ -4,23 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - Lucas West</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-crimson">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Lucas West</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <a class="navbar-brand fw-semibold" href="index.html">Lucas West</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="projects.html">Coursework Projects</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
                     <li class="nav-item"><a class="nav-link" href="resume.html">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -29,94 +30,138 @@
         </div>
     </nav>
 
-    <section>
-    <h1 class="text-center text-crimson mb-4">Projects</h1>
+    <!-- Page Header -->
+    <section class="container page-section text-center">
+        <h1 class="text-crimson mb-2">Selected Projects</h1>
+        <p class="text-muted mb-0">
+            Production systems, automation, and advanced analytics work from professional and academic experience.
+        </p>
+    </section>
 
-    <div class="card-container">
-        <div class="card">
-            <h2>Chickasaw Nation Casino Data Science - Business Data Analysis</h2>
-            <p>Analyzed multimillion-row datasets using Python and SQL to clean, organize, and model data. Developed business insights and recommendations through Power BI and Tableau dashboards, incorporating DAX for advanced analytics.</p>
-            <p><b>Skills:</b> Python, SQL, Power BI, Tableau, Excel, Tableau Prep, DAX</p>
+    <!-- Featured Professional Work -->
+    <section class="container page-section">
+        <h2 class="text-crimson mb-4">Featured Professional Work</h2>
+
+        <div class="card-container">
+
+            <!-- OTA -->
+            <div class="card card--accent">
+                <h5 class="mb-1">Oklahoma Turnpike Authority — Workflow & Data Engineering</h5>
+                <p class="text-muted mb-2">Enterprise SQL • Workflow automation • Data integrity</p>
+                <p class="mb-3">
+                    Developed and optimized SQL-based workflows within a large-scale operational database environment.
+                    Designed validation logic, investigated workflow state transitions, and built stored procedures
+                    to ensure data accuracy across cross-database systems supporting revenue and transaction processing.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">SQL Server</span>
+                    <span class="badge text-bg-light">Stored Procedures</span>
+                    <span class="badge text-bg-light">Workflow Automation</span>
+                    <span class="badge text-bg-light">Data Validation</span>
+                    <span class="badge text-bg-light">Cross-Database Queries</span>
+                </div>
+            </div>
+
+            <!-- Devon -->
+            <div class="card card--accent">
+                <h5 class="mb-1">Devon Energy — AI-Driven PDF to Structured Data Automation</h5>
+                <p class="text-muted mb-2">AI extraction • ETL automation • Enterprise reporting</p>
+                <p class="mb-3">
+                    Designed and implemented an AI-assisted data extraction pipeline that transformed
+                    100+ page PDF financial documents into structured datasets. Reduced manual processing time
+                    from hours to seconds and integrated results into enterprise SQL reporting workflows.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">Python</span>
+                    <span class="badge text-bg-light">AI Data Extraction</span>
+                    <span class="badge text-bg-light">SQL</span>
+                    <span class="badge text-bg-light">Alteryx</span>
+                    <span class="badge text-bg-light">ETL</span>
+                </div>
+            </div>
+
+            <!-- Chickasaw -->
+            <div class="card card--accent">
+                <h5 class="mb-1">Chickasaw Nation Casino — Business Intelligence & Analytics</h5>
+                <p class="text-muted mb-2">Multi-million row datasets • KPI development • BI dashboards</p>
+                <p class="mb-3">
+                    Analyzed large transactional datasets to develop executive-facing dashboards.
+                    Built Power BI and Tableau visualizations incorporating DAX measures to monitor
+                    revenue trends, performance metrics, and operational KPIs.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">Power BI</span>
+                    <span class="badge text-bg-light">Tableau</span>
+                    <span class="badge text-bg-light">DAX</span>
+                    <span class="badge text-bg-light">SQL</span>
+                    <span class="badge text-bg-light">Data Modeling</span>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h2>Reddit College Football Sentiment Analysis - Analytics Programming (Python)</h2>
-            <p>Scraped Reddit posts related to college football games using Python. Applied sentiment scoring to each post and analyzed correlations between fan sentiment and game events. Presented insights with interactive Tableau visualizations.</p>
-            <p><b>Skills:</b> Python, Tableau, Excel, Jupyter Notebook</p>
+    <!-- Advanced Analytics -->
+    <section class="container page-section">
+        <h2 class="text-crimson mb-4">Advanced Analytics & Modeling</h2>
+
+        <div class="card-container">
+
+            <div class="card card--accent">
+                <h5 class="mb-1">NBA Regression & Clustering Analysis</h5>
+                <p class="text-muted mb-2">Predictive modeling • Efficiency analysis</p>
+                <p class="mb-3">
+                    Built regression and clustering models to analyze historical NBA performance data.
+                    Identified efficiency patterns and performance drivers associated with team success.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">Python</span>
+                    <span class="badge text-bg-light">Regression</span>
+                    <span class="badge text-bg-light">Clustering</span>
+                    <span class="badge text-bg-light">Data Visualization</span>
+                </div>
+            </div>
+
+            <div class="card card--accent">
+                <h5 class="mb-1">Cardiovascular Disease Predictive Analytics</h5>
+                <p class="text-muted mb-2">25,000+ records • Predictive insights</p>
+                <p class="mb-3">
+                    Analyzed 25,000+ patient records to identify predictive indicators for cardiovascular risk.
+                    Performed data cleaning, statistical modeling, and visualization in R.
+                </p>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">R</span>
+                    <span class="badge text-bg-light">Statistical Modeling</span>
+                    <span class="badge text-bg-light">Data Cleaning</span>
+                    <span class="badge text-bg-light">Visualization</span>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h2>NBA Regression & Clustering Analysis - Data Science & Analytics</h2>
-            <p>Analyzed historical NBA statistics to evaluate team and player performance. Performed regression modeling and cluster analysis to identify efficiency trends and predict team success.</p>
-            <p><b>Skills:</b> Python, Tableau, Power BI, Jupyter Notebook</p>
-        </div>
-
-        <div class="card">
-            <h2>Medical Sales Data Visualization - Business Intelligence</h2>
-            <p>Processed and analyzed millions of rows of medical sales data across multiple tables. Built an interactive Tableau dashboard to highlight key sales trends and provide actionable insights.</p>
-            <p><b>Skills:</b> Tableau, Tableau Prep</p>
-        </div>
-
-        <div class="card">
-            <h2>Fly Fishing Company - Database Design</h2>
-            <p>Designed and built a relational database for a fictional company to manage inventory, sales, and trip bookings. Normalized tables, created ER diagrams, and wrote SQL queries to streamline booking and inventory processes.</p>
-            <p><b>Skills:</b> SQL, SQL Server Management Studio, ERD Diagramming</p>
-        </div>
-
-        <div class="card">
-            <h2>Mendix Web Application - MIS Field Project</h2>
-            <p>Created a low-code web application using Mendix with integrated dashboards, databases, and user-friendly workflows. Designed processes to reduce input errors and enhance usability.</p>
-            <p><b>Skills:</b> Mendix, Low-Code Development, Database Design, Workflow Automation</p>
-        </div>
-
-        <div class="card">
-            <h2>Personal Portfolio Website - Business Analysis Programming</h2>
-            <p>Developed a personal portfolio website using HTML and CSS, hosted on GitHub. Showcased projects, skills, and professional experience in a clean, accessible format.</p>
-            <p><b>Skills:</b> HTML, CSS, JavaScript, Boostrap, C#, GitHub, Visual Studio</p>
-        </div>
-
-        <div class="card">
-            <h2>Starbucks Market & Strategy Analysis - Strategic Business Management</h2>
-            <p>Conducted an in-depth analysis of Starbucks’ financial performance, market position, and competitive strategy. Applied frameworks such as SWOT, PESTEL, and VRIO to develop strategic recommendations supported by financial and market data.</p>
-            <p><b>Skills:</b> Excel, PowerPoint, Stock & Financial Analysis, Business Strategy</p>
-        </div>
-
-        <div class="card">
-            <h2>Tesla Stock Valuation - Investments</h2>
-            <p>Built a pro-forma valuation model for Tesla using public financial statements. Estimated stock value based on projected earnings and market conditions.</p>
-            <p><b>Skills:</b> Excel, Financial Modeling</p>
-        </div>
-
-        <div class="card">
-            <h2>Predictive Maintenance - Project Management Consulting</h2>
-            <p>Collaborated with a technology company to develop a full-scale project plan for predictive maintenance implementation. Created project scope, schedules, cost management strategies, and risk analysis in consultation with industry professionals.</p>
-            <p><b>Skills:</b> Project Scoping, Scheduling, Cost & Risk Management, Consulting</p>
-        </div>
-
-        <div class="card">
-            <h2>Cardiovascular Disease Predictive Analytics - Analytics Programming (R)</h2>
-            <p>Conducted a collaborative student assignment focused on cleaning and analyzing 25,000+ cardiovascular patient records to uncover predictive insights for cardiovascular disease prevention.</p>
-            <p><b>Skills:</b> R, R Data Analytics, R Data Visualization, Data Visualization and Presentation</p>
-        </div>
-
-        <div class="card">
-            <h2>Student Study Group Website - Web Development</h2>
-            <p>Designed and built a prototype web application for a class project aimed at improving collaboration and communication among university students.</p>
-            <p><b>Skills:</b> HTML, CSS, Tailwind, BootStrap</p>
-            <p>Link: <a href="https://class-mates-website.vercel.app/" style="color: red; text-decoration: underline;">Website-class-mates-project</a></p>
-        </div>
-    </div>
-</section>
-
-
-
-    <footer class="bg-light py-3 text-center">
-        <p>&copy; 2024 Lucas West</p>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/lucas-west-451887298/" target="_blank">LinkedIn</a></p>
-        <p><a href="mailto:Lucas.a.west-1@ou.edu">Lucas.a.west-1@ou.edu</a> | <a href="mailto:Lucas.west04@gmail.com">Lucas.west04@gmail.com</a></p>
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <p class="mb-1">&copy; <span id="year"></span> Lucas West</p>
+        <p class="mb-1">
+            Connect with me on
+            <a href="https://www.linkedin.com/in/lucas-west-451887298/" class="text-crimson" target="_blank">LinkedIn</a>
+        </p>
+        <p class="mb-0">
+            <a href="mailto:Lucas.a.west-1@ou.edu" class="text-crimson">Lucas.a.west-1@ou.edu</a>
+            |
+            <a href="mailto:Lucas.west04@gmail.com" class="text-crimson">Lucas.west04@gmail.com</a>
+        </p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
