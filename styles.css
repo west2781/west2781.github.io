@@ -271,14 +271,17 @@ form button:hover {
 
 
 
-/* Skills Grid*/
+/* ========================= */
+/* Full Skill Set: Force 2x2 */
+/* ========================= */
 .skills-grid-2x2 {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
+    align-items: start;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
     .skills-grid-2x2 {
         grid-template-columns: 1fr;
     }
