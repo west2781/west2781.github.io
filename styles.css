@@ -268,3 +268,28 @@ form button:hover {
         margin: 0 auto;
     }
 }
+
+
+/* ========================= */
+/* Skills Page Grid Control  */
+/* ========================= */
+
+.skills-grid {
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+/* Medium screens */
+@media (max-width: 992px) {
+    .skills-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Small screens */
+@media (max-width: 576px) {
+    .skills-grid {
+        grid-template-columns: 1fr;
+    }
+}
