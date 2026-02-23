@@ -293,3 +293,12 @@ form button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+
+/* ========================= */
+/* Softer Style for Core Competencies */
+/* ========================= */
+
+.card--soft {
+    border-left: 4px solid #d6d6d6; /* light gray instead of crimson */
+}
