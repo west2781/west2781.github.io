@@ -307,3 +307,10 @@ form button:hover {
         grid-template-columns: 1fr;
     }
 }
+
+/*Core Competencies*/
+.core-badges .badge {
+    padding: 0.45rem 0.65rem;   /* bigger chip */
+    font-weight: 600;
+    border: 1px solid #e5e5e5;  /* subtle definition */
+}
