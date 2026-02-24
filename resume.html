@@ -4,23 +4,26 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Work Experience - Lucas West</title>
+
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles.css?v=20">
 </head>
 <body>
+
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-crimson">
         <div class="container">
-            <a class="navbar-brand" href="index.html">Lucas West</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+            <a class="navbar-brand fw-semibold" href="index.html">Lucas West</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
+
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="projects.html">Coursework Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
                     <li class="nav-item"><a class="nav-link" href="skills.html">Skills</a></li>
                     <li class="nav-item"><a class="nav-link active" href="resume.html">Work Experience</a></li>
                     <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
@@ -29,58 +32,114 @@
         </div>
     </nav>
 
-    <!-- Work Experience Section -->
-    <section>
-    <h1 class="text-center text-crimson mb-4">Work Experience</h1>
+    <!-- Page Header -->
+    <section class="container page-section text-center">
+        <h1 class="text-crimson mb-2">Work Experience</h1>
+        <p class="text-muted mb-0">
+            Roles focused on SQL automation, analytics, reporting, and building reliable data workflows in enterprise environments.
+        </p>
+    </section>
 
-    <div class="resume-card-container">
-        <div class="card">
-            <h5>Oklahoma Turnpike Authority - Data Analyst</h5>
-            <p><b>November 2025 - Present | Remote, OK</b></p>
-            <p>
-                Conducted in-depth data analysis using SQL to identify and resolve data inconsistencies and ensure reliable datasets for operational reporting. Developed and maintained business reports within Google Cloud Platform to support strategic decision-making and executive insights. Executed SQL queries to validate data integrity and collaborated with cross-functional teams to enhance data management practices and streamline reporting workflows.
-            </p>
-            <p><b>Skills & Tools:</b> SQL, SQL Server Management Studio, Google Cloud Platform, Report Visualization</p>
+    <!-- Experience -->
+    <section class="container page-section">
+        <div class="resume-card-container">
+
+            <!-- OTA -->
+            <div class="card card--accent">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-1">
+                    <h5 class="mb-0">Oklahoma Turnpike Authority — Data Analyst</h5>
+                    <span class="text-muted">Nov 2025 – Present • Remote (OK)</span>
+                </div>
+
+                <p class="text-muted mt-2 mb-2">Enterprise SQL • Workflow automation • Data integrity • Operational reporting</p>
+
+                <ul class="mb-3">
+                    <li>Analyze large-scale operational datasets in SQL Server to identify data inconsistencies, validate business rules, and improve reporting reliability.</li>
+                    <li>Support workflow troubleshooting by investigating state transitions and verifying downstream impacts (without exposing sensitive system details).</li>
+                    <li>Build and maintain reporting datasets used for recurring operational and executive insights, improving consistency and reducing manual rework.</li>
+                    <li>Collaborate with cross-functional stakeholders to clarify requirements, implement data checks, and streamline reporting workflows.</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">SQL Server</span>
+                    <span class="badge text-bg-light">SSMS</span>
+                    <span class="badge text-bg-light">Data Validation</span>
+                    <span class="badge text-bg-light">Workflow Automation</span>
+                    <span class="badge text-bg-light">Reporting</span>
+                </div>
+            </div>
+
+            <!-- OU TA -->
+            <div class="card card--accent">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-1">
+                    <h5 class="mb-0">University of Oklahoma — Graduate Teaching Assistant</h5>
+                    <span class="text-muted">Aug 2025 – Present • Norman, OK</span>
+                </div>
+
+                <p class="text-muted mt-2 mb-2">Instruction • SQL fundamentals • BI support • Communication</p>
+
+                <ul class="mb-3">
+                    <li>Provide instructional support for Data Management for Business Intelligence, helping students learn SQL querying, data cleaning, and BI reporting concepts.</li>
+                    <li>Coach students on transforming raw data into structured outputs, emphasizing clear logic, accuracy, and reproducible results.</li>
+                    <li>Support course delivery through technical troubleshooting and student guidance for SQL/Excel-based assignments and reporting workflows.</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">SQL</span>
+                    <span class="badge text-bg-light">Excel</span>
+                    <span class="badge text-bg-light">Power BI</span>
+                    <span class="badge text-bg-light">Tableau</span>
+                    <span class="badge text-bg-light">Teaching</span>
+                </div>
+            </div>
+
+            <!-- Devon -->
+            <div class="card card--accent">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-start gap-1">
+                    <h5 class="mb-0">Devon Energy — Tax Technologist Intern</h5>
+                    <span class="text-muted">Mar 2025 – Aug 2025 • Oklahoma City, OK</span>
+                </div>
+
+                <p class="text-muted mt-2 mb-2">Automation • AI-assisted extraction • SQL ownership • BI reporting</p>
+
+                <ul class="mb-3">
+                    <li>Built AI-assisted workflows to extract data from long-form PDFs and convert outputs into structured datasets, significantly reducing manual processing time.</li>
+                    <li>Supported SQL Server data operations for the tax environment (imports/exports, job monitoring, troubleshooting) with a strong focus on data integrity and reliability.</li>
+                    <li>Developed Python scripts for extraction, transformation, and analysis tasks, including automation to support recurring reporting needs.</li>
+                    <li>Designed and updated Power BI dashboards for quarterly and annual reporting, improving visibility into key tax reporting metrics.</li>
+                    <li>Created supporting automation (PowerShell) and documented workflows to improve maintainability and team handoff.</li>
+                </ul>
+
+                <div class="d-flex flex-wrap gap-2">
+                    <span class="badge text-bg-light">Python</span>
+                    <span class="badge text-bg-light">SQL</span>
+                    <span class="badge text-bg-light">Power BI</span>
+                    <span class="badge text-bg-light">Alteryx</span>
+                    <span class="badge text-bg-light">ETL</span>
+                    <span class="badge text-bg-light">Workflow Automation</span>
+                </div>
+            </div>
+
         </div>
+    </section>
 
-        <div class="card">
-            <h5>University of Oklahoma - Graduate Teaching Assistant</h5>
-            <p><b>August 2025 - Present | Norman, OK</b></p>
-            <p>
-                Provide instructional support in Data Management for Business Intelligence, helping students work with SQL, Excel, and BI platforms to clean, query, and analyze complex datasets. Guide non-technical learners in applying ETL workflows and creating data visualizations, enhancing their ability to communicate insights effectively across technical and non-technical audiences. Collaborate with faculty on curriculum development and data-focused research projects.
-            </p>
-            <p><b>Skills & Tools:</b> SQL, Excel, Tableau, Power BI, Teaching, Communication</p>
-        </div>
-
-        <div class="card">
-            <h5>Devon Energy - Tax Technologist Intern</h5>
-            <p><b>March 2025 – August 2025 | Oklahoma City, OK</b></p>
-            <p>
-                Developed and implemented technology-driven solutions to automate workflows, manage large-scale tax data, and enhance reporting efficiency. Work supported compliance, improved data integrity, and provided actionable insights to the Tax Department.
-            </p>
-            <ul>
-                <li>Built AI agents to automate PDF extraction and transform files into structured datasets.</li>
-                <li>Served as database owner for the tax SQL Server, overseeing imports/exports, job monitoring, troubleshooting, and data integrity.</li>
-                <li>Developed and updated Python scripts for data extraction, transformation, analysis, and web scraping property appraiser sites.</li>
-                <li>Used industry software to analyze production forecasts, create economic models, and calculate well net present values.</li>
-                <li>Designed and updated interactive dashboards in Power BI for quarterly and annual tax reporting.</li>
-                <li>Automated file naming with a custom PowerShell script.</li>
-                <li>Documented and optimized workflows using Alteryx, Visio, and Lucidchart.</li>
-            </ul>
-            <p><b>Tools & Technologies:</b> Python, SQL, SQL Server Management Studio, Power BI, Alteryx, Combo Curve, PowerShell, Excel, ETL, Data Visualization, Workflow Automation</p>
-        </div>
-    </div>
-</section>
-
-
-    <footer class="bg-light py-3 text-center">
-        <p>&copy; 2024 Lucas West</p>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/lucas-west-451887298/" target="_blank">LinkedIn</a></p>
-        <p><a href="mailto:Lucas.a.west-1@ou.edu">Lucas.a.west-1@ou.edu</a> | <a href="mailto:Lucas.west04@gmail.com">Lucas.west04@gmail.com</a></p>
+    <!-- Footer -->
+    <footer class="py-4 text-center">
+        <p class="mb-1">&copy; <span id="year"></span> Lucas West</p>
+        <p class="mb-1">
+            Connect with me on
+            <a href="https://www.linkedin.com/in/lucas-west-451887298/" class="text-crimson" target="_blank" rel="noopener">LinkedIn</a>
+        </p>
+        <p class="mb-0">
+            <a href="mailto:Lucas.a.west-1@ou.edu" class="text-crimson">Lucas.a.west-1@ou.edu</a>
+            |
+            <a href="mailto:Lucas.west04@gmail.com" class="text-crimson">Lucas.west04@gmail.com</a>
+        </p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="script.js"></script>
+    <script>
+        document.getElementById("year").textContent = new Date().getFullYear();
+    </script>
+
 </body>
 </html>
