@@ -299,7 +299,14 @@ form button:hover {
     display: grid;
     gap: 1.5rem;
     grid-template-columns: repeat(2, 1fr);
-    align-items: start;
+    align-items: stretch; /* KEY CHANGE */
+}
+
+/* Make cards fill full height of grid cell */
+.skills-grid-2x2 .card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
 @media (max-width: 992px) {
@@ -315,6 +322,4 @@ form button:hover {
     border: 1px solid #e5e5e5;  /* subtle definition */
 }
 
-.skills-grid-2x2 {
-    align-items: start;
-}
+
